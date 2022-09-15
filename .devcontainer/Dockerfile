@@ -7,5 +7,5 @@ FROM mcr.microsoft.com/vscode/devcontainers/base:0-${VARIANT}
 # ** [Optional] Uncomment this section to install additional packages. **
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
-RUN apt-get update && apt-get install libsodium-dev && apt-get install libzmq3-dev && git clone https://github.com/hyperledger/indy-sdk && cd indy-sdk/libindy && cargo build --release && sudo mv target/release/libindy.so /usr/lib/libindy.so
+RUN apt-get update && apt-get install libsodium-dev && apt-get install libzmq3-dev && cd /var && git clone https://github.com/hyperledger/indy-sdk && cd indy-sdk/libindy && cargo build --release && sudo mv target/release/libindy.so /usr/lib/libindy.so
 
