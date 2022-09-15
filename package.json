@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,19 @@
   "bugs": {
     "url": "https://github.com/symfoni/aries-ts-test/issues"
   },
-  "homepage": "https://github.com/symfoni/aries-ts-test#readme"
+  "homepage": "https://github.com/symfoni/aries-ts-test#readme",
+  "devDependencies": {
+    "ava": "^4.3.3"
+  },
+  "ava": {
+    "extensions": {
+      "ts": "module"
+    },
+    "nodeArguments": [
+      "--loader=ts-node/esm"
+    ],
+    "files": [
+      "tests/**/*"
+    ]
+  }
 }
