@@ -1,0 +1,19 @@
+{
+  "name": "aries-ts-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/symfoni/aries-ts-test.git"
+  },
+  "author": "Robertosnap",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/symfoni/aries-ts-test/issues"
+  },
+  "homepage": "https://github.com/symfoni/aries-ts-test#readme"
+}
